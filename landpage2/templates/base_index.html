@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %} Base{% endblock %}</title>
+</head>
+<body>
+
+<p>header</p>
+
+
+
+{%  if campaign.self_emp %}
+    <div>
+        <p>Are you self employed?</p>
+    </div>
+{% endif %}
+
+
+
+
+{% block content %}
+    <p>Base Index</p>
+{% endblock %}
+
+
+</body>
+</html>
